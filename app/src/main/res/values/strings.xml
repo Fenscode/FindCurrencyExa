@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FindCurrencyExa</string>
+    <string name="find">Find</string>
+    <string name="sorry_no_currency_found">Sorry! no currency found</string>
+    <string name="currency_code">Currency code</string>
+    <string name="iso3_country_code">ISO3 country code</string>
+    <string name="country_code">Country code</string>
+    <string name="country_name">Country name</string>
+</resources>

@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg"
+    android:paddingTop="30dp"
+    tools:context="com.example.mind.findcurrencyexa.MainFragment">
+
+    <FrameLayout
+        android:id="@+id/fl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp">
+
+        <EditText
+            android:id="@+id/et_location_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/et_bg"
+            android:hint="@string/country_name"
+            android:padding="15dp"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_country_code"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="55dp"
+            android:background="@color/et_bg"
+            android:hint="@string/country_code"
+            android:padding="15dp"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_countyISO"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="55dp"
+            android:background="@color/et_bg"
+            android:hint="@string/iso3_country_code"
+            android:padding="15dp"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_currencyCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="110dp"
+            android:background="@color/et_bg"
+            android:hint="@string/currency_code"
+            android:padding="15dp"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btn_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:background="@color/btn_bg"
+            android:padding="5dp"
+            android:text="@string/find"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/fl_top"
+        android:layout_marginTop="20dp"
+        android:background="@color/divider_bg" />
+
+    <FrameLayout
+        android:id="@+id/fl_bottomContents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_divider"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp">
+
+        <TextView
+            android:id="@+id/tv_currencySymbol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/txt_gray"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/tv_currencyDisplayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/txt_gray2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_currencyCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:textColor="@color/txt_gray2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_fractionDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:textColor="@color/txt_gray2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_numericCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:textColor="@color/txt_gray2"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_noDataFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_divider"
+        android:gravity="center"
+        android:text="@string/sorry_no_currency_found"
+        android:visibility="gone" />
+</RelativeLayout>

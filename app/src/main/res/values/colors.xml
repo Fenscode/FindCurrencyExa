@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="et_bg">#DCEDC8</color>
+    <color name="btn_bg">#1B5E20</color>
+    <color name="fragment_bg">#F1F8E9</color>
+    <color name="divider_bg">#827717</color>
+    <color name="txt_gray">#424242</color>
+    <color name="txt_gray2">#616161</color>
+</resources>
