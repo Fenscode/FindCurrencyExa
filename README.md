@@ -1,7 +1,7 @@
 ![](https://i.imgur.com/iyRpn4p.jpg)
 
 # FindCurrencyExa
-### Search currency information by Country, Country code,ISO3 Country code, Currency code and 
+### Search currency information by Country, Country code,ISO3 Country code and Currency code
 Gets the set of available currencies. The returned set of currencies contains all of the available currencies, which may include currencies that represent obsolete ISO 4217 codes
 
 Java provide a Currency utility class, which is returns list of currency information of all countries.
